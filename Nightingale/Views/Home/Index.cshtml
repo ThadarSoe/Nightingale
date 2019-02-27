@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Business 2</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <style>
+            html {
+                overflow-y: hidden;
+            }
+
+            table {
+                background-image: url('../../images/stripe.jpg');
+            }
+
+            .button {
+            background-color: #5dade2; /* Green */
+            border: none;
+            padding: 9px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: auto;
+        }
+
+        .button1 {
+            background-color: #5dade2; 
+            color: white; 
+            border: 2px solid #5dade2;
+        }
+
+        .button1:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        td {
+            color: white;
+        }
+        </style>
+        <br /><br /><br />
+        @*<h1 class="header-content"> Welcome to Nightingale </h1>*@
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img src="~/images/LOGO .png" width="130px" height="130px" />
+                <h1 style="font-family: Forte"> Welcome to Nightingale </h1>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br/>
+        <table border="0" width="100%">
+            <tr height="50px">
+                <td> Can't sleep? Feeling awake for some reason? </td>
+            </tr>
+            <tr height="50px">
+                <td> Then, you've come to the right place. </td>
+            </tr>
+            <tr height="50px">
+                <td> Choose a song or a piece of music to your liking and drift off to sleep peacefully. </td>
+            </tr>
+            <tr height="50px">
+                <td>
+                    <button class="button button1"><a href="@Url.Action("Index", "Catergories")"> START </a></button>
+                </td>
+            </tr>
+            <tr>
+                <td><br /></td>
+            </tr>
+        </table>
+    </header>
+    <!-- jQuery -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+</body>
+</html>

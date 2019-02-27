@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Business 2</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    @*<link href="../css/custom.css" rel="stylesheet">
+        <link href="../css/css.css" rel="stylesheet">*@
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom Fonts from Google -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
+    <style>
+        p {
+            font-family: 'Palatino Linotype';
+            color: white;
+            font-size: medium;
+            padding-left: 50px;
+        }
+
+        table { 
+            background: url("../images/csbg.jpg") no-repeat; 
+            background-size: 1500px 1000px;
+        } 
+
+        .button {
+            background-color: #5dade2; /* Green */
+            border: none;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: auto;
+        }
+
+        .button1 {
+            background-color: #5dade2; 
+            color: white; 
+            border: 2px solid #5dade2;
+        }
+
+        .button1:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td align="center"><h1 style="color: white; font-family:'Palatino Linotype'; font-size: 80px"> Classical Music </h1></td>
+        </tr>
+        <tr>
+            <td>
+                <h3> Introduction and Rondo Capriccioso </h3>
+                <p> The Introduction and Rondo Capriccioso in A minor (French: Introduction et Rondo capriccioso en la mineur ), Op. 28, is a composition for violin and orchestra written in 1863 by Camille Saint-Saëns for the virtuoso violinist Pablo de Sarasate. </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 50px"><button class="button button1"><a href='@Url.Action("Index", "CM1")'> Listen </a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <h3> Gymnopédie No.1 </h3>
+                <p> Luscious chords, slow tempi and gorgeous, drifting mood, the Gymnopédies by French composer Erik Satie have become synonymous with relaxation and peaceful times. The first of the set is perhaps the most famous of the collection, and it really invites you to close your eyes and float away for the night. </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 50px"><button class="button button1"><a href='@Url.Action("Index", "CM2")'> Listen </a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <h3> Nocturne No.2, Op.9 </h3>
+                <p> Frédéric Chopin is undoubtedly one of the masters of the Romantic era, writing an abundance of beautiful, relaxing works for piano. This stunning nocturne was written when he was just 20 years old and overflows with delicate beauty, perfect for a relaxing late night. </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 50px"><button class="button button1"><a href='@Url.Action("Index", "CM3")'> Listen </a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <h3> Prelude No.1 </h3>
+                <p> Bach is undoubtedly one of the all-time masters of classical music. This heavenly prelude from Bach’s collection The Well Tempered Klavier of 48 Preludes and Fugues is famous around the world for being a piece of such simple beauty, consisting of broken chords. </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 50px"><button class="button button1"><a href='@Url.Action("Index", "CM4")'> Listen </a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <h3> Moonlight Sonata </h3>
+                <p> The Piano Sonata No. 14 in C♯ minor "Quasi una fantasia", Op. 27, No. 2, popularly known as the Moonlight Sonata, is a piano sonata by Ludwig van Beethoven. </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 50px"><button class="button button1"><a href='@Url.Action("Index", "CM5")'> Listen </a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
